@@ -6,6 +6,8 @@ import Contact from './components/Contact/Contact'
 
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Services from './components/Services/Services'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Header />} />
+        <Route path='/servicios' element={<Services />} />
         <Route path='/contacto' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   )
 }
